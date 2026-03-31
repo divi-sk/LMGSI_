@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ca">
 <head>
-  <title>Convertidor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeAPI Converter</title>
 </head>
-
 <body>
-<!-- convertir a uppercase -->
- <h4>TO UPPER CASE</h4>
-  <textarea id="input"></textarea>
-  <button id="btn">Convertir</button>
-  <textarea id="output"></textarea>
-  <br><br>
-  <!-- JSON to XML -->
-  <h4>JSON TO XML</h4>
-  <textarea id="input2"></textarea>
-  <button id="btn2">Convertir a xml</button>
-  <textarea id="output2"></textarea>
- <br><br>
-  <!-- XML to JSON -->
-  <h4>XML TO JSON</h4>
-  <textarea id="input3"></textarea>
-  <button id="btn3">Convertir a json</button>
-  <textarea id="output3"></textarea>
-
+  <h1>PokeAPI - Conversió JSON ↔ XML</h1>
+  <label for="pokemon-name">Nom del Pokémon:</label>
+  <input type="text" id="pokemon-name" placeholder="pikachu">
+  <button id="show-image">Mostrar Imatge</button>
+  <button id="show-abilities">Mostrar Habilitats</button>
+  <button id="show-xml">Mostrar XML</button>
+  
+  <div id="image-container"></div>
+  
+  <h3>Habilitats:</h3>
+  <ul id="abilities-list"></ul>
+  
+  <h3>XML:</h3>
+  <pre id="xml-output"></pre>
+  
   <script src="app.js"></script>
-
 </body>
 </html>
